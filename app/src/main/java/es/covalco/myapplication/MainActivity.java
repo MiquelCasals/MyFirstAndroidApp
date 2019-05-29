@@ -10,7 +10,11 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.graphics.Color;
 // Podem fer imports de classes, cosa que en .NET no podíem fer havien de ser namespaces.
-
+/*
+  Activity per la Calculadora:
+  Entrem 2 enters i realitzem les operacions: suma, resta, multiplicació i divisió
+  Tenim un botó per cada operació
+ */
 public class MainActivity extends AppCompatActivity {
 
   // Definim els controls de la nostra pantalla
@@ -20,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
   private Button btnSubstract;
   private Button btnMultiply;
   private Button btnDivide;
+  // Array amb la fruita que es pot seleccionar en el control AutoCompleteView
   String[] fruits = {"Apple", "Banana", "Cherry", "Date", "Grape", "Kiwi", "Mango", "Pear"};
 
 
@@ -34,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
     //
     // Configurem la funcionalitat del control AutoCompleteView
     // Creem una instancia del ArrayAdapter que conté la llista de fruita
-    ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                                                            android.R.layout.select_dialog_item,
-                                                            fruits);
+    ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
+                                                       android.R.layout.select_dialog_item,
+                                                       fruits);
     // Getting the instance of AutoCompleteTextView
     AutoCompleteTextView actv = (AutoCompleteTextView) findViewById(R.id.autoCompleteTextView);
     actv.setThreshold(1);     //will start working from first character

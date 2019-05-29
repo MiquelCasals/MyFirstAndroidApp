@@ -30,4 +30,9 @@ public class ExampleUnitTest {
     ICalculator iCalculator = new Calculator(6,2);
     assertEquals(3, iCalculator.divide());
   }
+  @Test
+  public void divide_byzero_isControlled() {
+    ICalculator iCalculator = new Calculator(2019,0);
+    assertEquals(0, iCalculator.divide());
+  }
 }

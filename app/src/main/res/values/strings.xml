@@ -2,4 +2,29 @@
     <string name="app_name">My Application</string>
     <string name="presentacio">Hello World!!!</string>
     <string name="title_activity_persona">PersonaActivity</string>
+    <string name="provincia_prompt">Escoge una provincia</string>
+    <string name="NombreText">Nombre</string>
+    <string name="emailTest">Email@example.com</string>
+    <string name="passwordTest">Password</string>
+    <string name="AficioMotor">Motor</string>
+    <string name="AficioCinema">Cinema / Sèries</string>
+    <string name="SexeHome">Hombre</string>
+    <string name="SexeDona">Mujer</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Email">Email</string>
+    <string name="Registrar">Registrar</string>
+    <string name="DataNeixament">Fecha Nacimiento</string>
+    <string name="Viatjar">Viajar</string>
+    <string name="Provincia">Provincia</string>
+    <string name="Sexe">Sexo</string>
+    <string name="Aficions">Aficiones</string>
+    <string name="Enviar_Correu">Enviar Correo</string>
+
+    <string-array name="provincia_arrays">
+        <item>Barcelona</item>
+        <item>Girona</item>
+        <item>Lleida</item>
+        <item>Tarragona</item>
+    </string-array>
+
 </resources>
